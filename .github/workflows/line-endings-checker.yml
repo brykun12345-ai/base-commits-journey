@@ -1,0 +1,15 @@
+name: Line Endings Checker
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run Line Endings Checker
+        run: python scripts/line_endings_checker.py
