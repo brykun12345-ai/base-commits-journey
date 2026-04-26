@@ -4,5 +4,5 @@ jobs:
   summary:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - run: echo '### Checks passed' >> $GITHUB_STEP_SUMMARY
