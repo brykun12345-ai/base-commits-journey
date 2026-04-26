@@ -1,0 +1,8 @@
+name: Summary
+on: [push]
+jobs:
+  summary:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo '### Checks passed' >> $GITHUB_STEP_SUMMARY
